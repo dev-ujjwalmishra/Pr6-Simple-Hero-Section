@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 80px;
+    background-color: #373A40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.nav-bar ul {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+.nav-list a:hover{
+    background-color: white;
+    color: black;
+}
+
+main{
+    min-height: 100vh;
+    background-image: url('../img/img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-light{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 50;
+}
+
+.hero-content h1{
+    font-size: 70px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.hero-content .btn{
+    display: inline-block;
+    padding: 9px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    font-size: 18px;
+}
+
+.hero-content .btn:nth-child(2){
+    background-color: transparent;
+    color: white;
+    margin-right: 20px;
+}
+
+.hero-content .btn:last-child{
+    background-color: white;
+    color: black;
+}
+
+.hero-content .btn:nth-child(2):hover{
+    background-color: white;
+    color: black
+}
+
+footer{
+    height: 80px;
+    margin-top: auto;
+    background-color: #373A40;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+}
